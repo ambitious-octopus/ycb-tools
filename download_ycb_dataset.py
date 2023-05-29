@@ -17,11 +17,20 @@ output_directory = os.path.join("models", "ycb")
 
 # Define a list of objects to download from
 # http://ycb-benchmarks.s3-website-us-east-1.amazonaws.com/
-objects_to_download = "all"
+# objects_to_download = "all"
 # objects_to_download = ["001_chips_can", 
 #                        "002_master_chef_can",
 #                        "003_cracker_box",
 #                        "004_sugar_box"]
+objects_to_download = ["011_banana",
+                       "012_strawberry",
+                       "013_apple",
+                       "014_lemon",
+                       "015_peach",
+                       "016_pear",
+                       "017_orange",
+                       "018_plum",
+                       "006_mustard_bottle"]
 
 # You can edit this list to only download certain kinds of files.
 # 'berkeley_rgbd' contains all of the depth maps and images from the Carmines.
