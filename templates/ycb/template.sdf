@@ -5,14 +5,14 @@
     <link name="link">
       <inertial>       
         <pose>$COM_POSE</pose> 
-        <mass>$MASS</mass>
+        <mass>0.1</mass>
         <inertia>
-          <ixx>$IXX</ixx>
-          <ixy>$IXY</ixy>
-          <ixz>$IXZ</ixz>
-          <iyy>$IYY</iyy>
-          <iyz>$IYZ</iyz>
-          <izz>$IZZ</izz>
+          <ixx>0.005</ixx>
+          <ixy>2.7341014017936823e-24</ixy>
+          <ixz>-2.689738473166534e-24</ixz>
+          <iyy>0.005</iyy>
+          <iyz>-1.3427070803445076e-24</iyz>
+          <izz>0.005</izz>
         </inertia>
       </inertial>
       <collision name="collision">
@@ -23,12 +23,12 @@
 	        </mesh>
         </geometry>
         <surface>
-        <!--<friction>
+        <friction>
           <ode>
-            <mu>0.8</mu>
-            <mu2>0.6</mu2>
+            <mu>2.1</mu>
+            <mu2>2.0</mu2>
           </ode>
-        </friction>-->
+        </friction>
       </surface>
       </collision>
       <visual name="visual">
