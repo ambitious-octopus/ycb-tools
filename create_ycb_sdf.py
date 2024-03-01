@@ -109,14 +109,16 @@ if __name__=="__main__":
                 model_text = model_text.replace("$MODEL_LONG", model_long)
                 model_text = model_text.replace("$MESH_TYPE", mesh_type)
                 model_text = model_text.replace("$COLLISION_MESH", collision_mesh_text)
-                model_text = model_text.replace("$MASS", mass_text)
+                # We will use the one in the tempalte
+                # model_text = model_text.replace("$MASS", mass_text)
                 model_text = model_text.replace("$COM_POSE", com_text)
-                model_text = model_text.replace("$IXX", str(inertia[0][0]))
-                model_text = model_text.replace("$IYY", str(inertia[1][1]))
-                model_text = model_text.replace("$IZZ", str(inertia[2][2]))
-                model_text = model_text.replace("$IXY", str(inertia[0][1]))
-                model_text = model_text.replace("$IXZ", str(inertia[0][2]))
-                model_text = model_text.replace("$IYZ", str(inertia[1][2]))
+                # We will use the one in the tempalte
+                # model_text = model_text.replace("$IXX", str(inertia[0][0]))
+                # model_text = model_text.replace("$IYY", str(inertia[1][1]))
+                # model_text = model_text.replace("$IZZ", str(inertia[2][2]))
+                # model_text = model_text.replace("$IXY", str(inertia[0][1]))
+                # model_text = model_text.replace("$IXZ", str(inertia[0][2]))
+                # model_text = model_text.replace("$IYZ", str(inertia[1][2]))
                 with open(os.path.join(model_folder, model_short + ".sdf"), "w") as f:
                     f.write(model_text)
 
