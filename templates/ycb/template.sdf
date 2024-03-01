@@ -23,12 +23,12 @@
 	        </mesh>
         </geometry>
         <surface>
-        <!--<friction>
+        <friction>
           <ode>
             <mu>0.8</mu>
             <mu2>0.6</mu2>
           </ode>
-        </friction>-->
+        </friction>
       </surface>
       </collision>
       <visual name="visual">
